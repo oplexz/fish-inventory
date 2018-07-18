@@ -1,0 +1,5 @@
+{
+	"token": "your_token",
+	"channelId": "target_channel",
+	"ownerId": "owner_id"
+}
