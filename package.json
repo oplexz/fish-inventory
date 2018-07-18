@@ -1,0 +1,23 @@
+{
+  "name": "fish-inventory",
+  "version": "1.0.0",
+  "description": "Something that calculates fish inventory price",
+  "main": "index.js",
+  "dependencies": {
+    "discord.js": "^11.3.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oplexz/fish-inventory.git"
+  },
+  "author": "oplexz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oplexz/fish-inventory/issues"
+  },
+  "homepage": "https://github.com/oplexz/fish-inventory#readme"
+}
