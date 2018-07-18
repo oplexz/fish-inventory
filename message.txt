@@ -4,4 +4,4 @@ __**Fish inventory**__
 🐠 | **${uncommon}x** *(¥${uncommon_price})*
 🗑 | **${garbage}x** *(¥${garbage_price})*
 ---------------------
-💸 | *¥${sum*10} spent, ${diff>=0?"made":"lost"} ¥${diff<0?-diff:diff}*
+💸 | *¥${sum*10} spent, ${diff>=0?"made":"lost"} ¥${Math.abs(diff)}*

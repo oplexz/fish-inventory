@@ -29,7 +29,7 @@ Client.on("message", (msg) => {
 				let spent = sum*10;
 				let diff = sum_price-spent;
 
-				let out = `__**Fish inventory**__\n🎣 | **${sum}x** fish in total (*¥${sum_price}*):\n🐟 | **${common}x** *(¥${common_price})*\n🐠 | **${uncommon}x** *(¥${uncommon_price})*\n🗑 | **${garbage}x** *(¥${garbage_price})*\n---------------------\n💸 | *¥${sum*10} spent, ${diff>=0?"made":"lost"} ¥${diff<0?-diff:diff}*\n`;
+				let out = `__**Fish inventory**__\n🎣 | **${sum}x** fish in total (*¥${sum_price}*):\n🐟 | **${common}x** *(¥${common_price})*\n🐠 | **${uncommon}x** *(¥${uncommon_price})*\n🗑 | **${garbage}x** *(¥${garbage_price})*\n---------------------\n💸 | *¥${sum*10} spent, ${diff>=0?"made":"lost"} ¥${Math.abs(diff)}*`;
 
 				Client.channels.get(data.channelId).send(out);
 			}
