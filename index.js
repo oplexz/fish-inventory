@@ -6,7 +6,7 @@ let ownerOnly = false;
 
 Client.on("message", (msg) => {
 	if (msg.author.id=="172002275412279296") { // Tatsumaki
-		if(/\*\*(.*?)\*\*,[^\d]+(\d+)[^\d]+(\d+)[^\d]+(\d+)/g.test(msg.content)) { // Magic regex that tells if message is inventory output (thanks @Tenrys)
+		if(/🎣  \|  \*\*(.*?)\*\*, displaying fishy inventory:\n🐟 \*\*`Common Fish`\*\*  \|  (\d+\n)🐠 \*\*`Uncommon Fish`\*\*  \|  (\d+\n)🗑 \*\*`Garbage`\*\*  \|  (\d+)/g.test(msg.content)) {
 			let lines = msg.content.split("\n");
 
 			for(let i=0; i<lines.length; i++) {
